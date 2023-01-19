@@ -32,16 +32,21 @@
             </div>
         </div>
     </header>
-    <section>
-        <div class="questions"
-        
+    <section class="hide" id="quiz">
+        <div class="question"
+        <h2 id="question_text"></h2>
+    
+        <div id="options">
+            <button class="option-1" onclick="checkAnswer('1')">one</button>
+            <button class="option-2" onclick="checkAnswer('2')">two</button>
+            <button class="option-3" onclick="checkAnswer('3')">three</button>
+            <button class="option-4" onclick="checkAnswer('4')">four</button>
+        </div>
+
+        <div class="result"> </div>
     </section>
+
     
-    
-
-
-
-
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
