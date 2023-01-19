@@ -8,27 +8,22 @@
     <title>Coding Quiz Challenge</title>
 </head>
 <body>
-    <header>
-       <span>View high scores</span> 
-       <span>time:</span>
-    </header>
     <div class="info_card">
         <h1>Coding Quiz Challenge</h1>
         <div>Try to answer the follwing code-related questions within the time limit.</div>
         <div>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</div>
     </div>
 
-    <div class="start_button">
-        <button>Start Quiz</button>
+    <div class="buttons">
+        <button class="start_button">Start Quiz</button>
+        <button class="high_score">Scores</button>
     </div>
 
     <!-- Questions -->
     <header>
         <div class="quiz_box">
-            <div class="high_score"> View High scores</div>
             <div class="timer">
-                <div class="timer_text"> Time:</div>
-                <div class="timer_sec"> 60</div>
+                <div id="timer_sec"></div>
             </div>
         </div>
     </header>
@@ -43,9 +38,23 @@
             <button class="option-4" onclick="checkAnswer('4')">four</button>
         </div>
 
-        <div class="result"> </div>
     </section>
 
+    <div class="right_wrong"></div>
+
+    
+<div class="result">
+    <h2>All done!</h2>
+    <div class="score">
+        <h3>Your final score is</h3>
+    </div>
+    <form>
+        <label for="initials">Enter Initials</label>
+        <input type="text" name="initials" id="initials" />
+        <button class="submit">Submit</button>
+    </form>
+            
+</div>
     
     <script src="./assets/js/script.js"></script>
 </body>
