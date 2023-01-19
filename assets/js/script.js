@@ -60,21 +60,7 @@ var quiz = [
     }
 ]
 
-var timeEl = document.querySelector(".timer")
-var counter = document.getElementById("timer_sec")
-var high_score = document.querySelector(".buttons .high_score")
-var secondsLeft = 60
-function setTime() {
-    var timerInterval = setInterval(function() {
-        secondsLeft--;
-        timeEl.textContent = secondsLeft + "seconds left";
 
-        if (secondsLeft ===0) {
-            clearInterval(timerInterval);
-            showResult();
-        }
-    },1000);
-}
 document.querySelector(".high_score").addEventListener("click", function (){
     secondsLeft -= 5
  })
@@ -97,7 +83,6 @@ var result = ""
 function checkAnswer(correctAnswer)
 
 result = questions[questionNumber].Answer
-
 if (result !== correctAnswer) {
     secondsLeft -= 5
     right_wrong.textContent= incorrect
@@ -105,6 +90,23 @@ if (result !== correctAnswer) {
 } else {
     right_wrong.textContent = "correct";
     right_wrong.getElementsByClassName.color = "green"
+}
+
+//timer
+var timeEl = document.querySelector(".timer")
+var counter = document.getElementById("timer_sec")
+var high_score = document.querySelector(".buttons .high_score")
+var secondsLeft = 60
+function setTime() {
+    var timerInterval = setInterval(function() {
+        secondsLeft--;
+        timeEl.textContent = secondsLeft + "seconds left";
+
+        if (secondsLeft ===0) {
+            clearInterval(timerInterval);
+            showResult();
+        }
+    },1000);
 }
 
 //After timer over
