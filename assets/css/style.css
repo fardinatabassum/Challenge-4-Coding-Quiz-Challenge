@@ -1,0 +1,23 @@
+
+body {
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* start button styling */
+.start_button button{
+    position:absolute;
+    color: white;
+    font-size: 25px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    position:relative;
+    cursor: pointer;
+    
+}
+
+.info_card {
+    font-size: 30px;
+
+}
