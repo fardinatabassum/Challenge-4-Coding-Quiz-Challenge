@@ -1,40 +1,178 @@
-
 body {
-    background-color: lightgray;
-    text-align:center
+    padding: .5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
 }
 
-/* start button styling */
-.buttons button{
-    position:absolute;
+#info-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    width: 500px;
+    height: 700px;
+}
+
+#timer {
+    background-color: purple;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
     color: white;
-    font-size: 25px;
-    background-color: blueviolet;
-    border: none;
-    border-radius: 5px;
-    position:relative;
+    border: 2px solid black;
+}
+
+#question-container {
+    text-align: center;
+}
+
+
+#question-container ul li {
+    border: 2px solid black;
+    border-radius: 15px 15px;
+    line-height: 150%;
+    margin: 3%;
     cursor: pointer;
-    display: inline-block;
+}
+
+#question-container ul :hover {
+    list-style-type: none;
+    background-color: white;
+    color: black;
+}
+
+#timeLeft {
+    float: right;
+}
+
+#retake {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: purple;
     padding: 10px;
-  
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    left: 5%;
+    width: auto;
+    border: 2px solid black;
 }
 
-.info_card {
-    font-size: 30px;
-    padding: 20px;
-
+#highScore {
+    border: none;
 }
 
-.questions div button{
-    background-color: aliceblue;
+#clear {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:purple;
     padding: 10px;
-   
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    right: 5%;
+    border: 2px solid black;
 }
 
-.hide {
-    display: none;
+button {
+    border-radius: 15px 15px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    cursor: pointer;
 }
 
-.hide.on {
-    display: 0;
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+#Submit {
+    background-color: purple;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+li {
+    background-color: purple;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+
+/* Media Query max-width: 786px */
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+    #wrapper {
+        position: absolute;
+        left: 17%;
+    }
+    #goBack {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #clear {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Media Query max-width: 640px */
+
+@media screen and (max-width: 375px) {
+    #wrapper {
+        padding-top: 50%;
+    }
+    #questionsDiv {
+        margin-right: 13%;
+        font-size: 150%;
+    }
+    #currentTime {
+        margin-right: 75%;
+    }
+    #goBack {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
