@@ -1,3 +1,4 @@
+// variables
 var highScoreBtn = document.getElementById("highScore");
 var clearBtn = document.getElementById("clear");
 var retakeBtn = document.getElementById("retake");
