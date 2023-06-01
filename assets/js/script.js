@@ -9,6 +9,7 @@ const questionsContainer = document.getElementById("question-container");
 const wrapper = document.getElementById("info-card");
 const createUl = document.createElement("ul");
 
+// Quiz content
 const quiz = [
   {
     question: "Commonly used data types DO Not Include:",
