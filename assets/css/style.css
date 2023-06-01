@@ -1,11 +1,11 @@
 
-body {
+/* body {
     background-color: lightgray;
     text-align:center
 }
 
 /* start button styling */
-.buttons button{
+/* .buttons button{
     position:absolute;
     color: white;
     font-size: 25px;
@@ -17,24 +17,24 @@ body {
     display: inline-block;
     padding: 10px;
   
-}
+} */
 
-.info_card {
+/* .info_card {
     font-size: 30px;
     padding: 20px;
 
-}
-
+} */
+/* 
 .questions div button{
     background-color: aliceblue;
     padding: 10px;
    
-}
+} */
 
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
-.hide.on {
+/* .hide.on {
     display: 0;
-}
+} */ */

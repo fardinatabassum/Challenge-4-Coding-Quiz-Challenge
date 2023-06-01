@@ -8,19 +8,22 @@
     <title>Coding Quiz Challenge</title>
 </head>
 <body>
-    <div class="info_card">
-        <h1>Coding Quiz Challenge</h1>
-        <div>Try to answer the follwing code-related questions within the time limit.</div>
-        <div>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</div>
-    </div>
+    <a href="./highscore.html">View Highscores</a>
+    <div id="timeLeft"></div>
+    <div id="info-card">
+        <div id="question-container">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the follwing code-related questions within the time limit.</p>
+            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!<p>
+            <ul id="choicesUl"></ul>
+            <button id="timer">Start Quiz</button>
+        </div>
 
-    <div class="buttons">
-        <button class="start_button">Start Quiz</button>
-        <button class="high_score">Scores</button>
     </div>
+    
 
     <!-- Questions -->
-    <header>
+    <!-- <header>
         <div class="quiz_box">
             <div class="timer">
                 <div id="timer_sec"></div>
@@ -32,18 +35,18 @@
         <h2 id="question_text"></h2>
     
         <div id="options">
-            <button class="option-1" onclick="checkAnswer('1')">one</button>
-            <button class="option-2" onclick="checkAnswer('2')">two</button>
-            <button class="option-3" onclick="checkAnswer('3')">three</button>
-            <button class="option-4" onclick="checkAnswer('4')">four</button>
+            <button class="option-1" onclick="checkAnswer('1')"></button>
+            <button class="option-2" onclick="checkAnswer('2')"></button>
+            <button class="option-3" onclick="checkAnswer('3')"></button>
+            <button class="option-4" onclick="checkAnswer('4')"></button>
         </div>
 
     </section>
 
-    <div class="right_wrong"></div>
+    <div class="right_wrong"></div> -->
 
     
-<div class="result">
+<!-- <div class="result">
     <h2>All done!</h2>
     <div class="score">
         <h3>Your final score is</h3>
@@ -54,7 +57,7 @@
         <button class="submit">Submit</button>
     </form>
             
-</div>
+</div> -->
     
     <script src="./assets/js/script.js"></script>
 </body>
